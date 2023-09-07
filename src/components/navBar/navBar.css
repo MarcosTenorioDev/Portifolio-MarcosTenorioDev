@@ -1,0 +1,36 @@
+#navBar{
+    border-bottom: 1px solid var(--text-white);
+}
+.navContent{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1980px;
+    margin-inline: auto;
+    padding: 15px 5%;
+}
+.logo{
+    font-size: 2.6rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    max-width: 285px;
+    padding: 0;
+    letter-spacing: 1.5%;
+}
+.logo span{
+    display: flex;
+    justify-content: flex-end;
+}
+.links{
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 100px;
+    width: 70%;
+}
+
+  

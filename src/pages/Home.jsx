@@ -1,8 +1,11 @@
+import { NavBar } from '../components/components'
+import './home.css'
+
 const Home = () => {
   return(
-    <>
-        <h1>Hello World</h1>
-    </>
+    <div id="homepage">
+        <NavBar />
+    </div>
   ) 
 };
 
