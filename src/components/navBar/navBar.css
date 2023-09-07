@@ -1,5 +1,6 @@
 #navBar{
     border-bottom: 1px solid var(--text-white);
+    width: 100%;
 }
 .navContent{
     display: flex;

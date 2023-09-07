@@ -1,12 +1,16 @@
-import { NavBar } from '../components/components'
-import './home.css'
+import { NavBar, Profile } from "../components/components";
+import "./home.css";
 
 const Home = () => {
-  return(
+  return (
     <div id="homepage">
+      <header id="header">
+        <div className="backgroundImg"></div>
         <NavBar />
+        <Profile />
+      </header>
     </div>
-  ) 
+  );
 };
 
 export default Home;

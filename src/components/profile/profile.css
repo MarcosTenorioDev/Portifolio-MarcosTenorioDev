@@ -1,0 +1,56 @@
+#profile{
+    flex: 1;
+    display: flex;
+    max-width: 1980px;
+    width: 100%;
+    padding: var(--paddingSection);
+}
+.profileIntro{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.profileData{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-height: 1000px;
+    gap: 50px;
+}
+#titleProfile{
+    display: flex;
+    flex-direction: column;
+    font-size: 6rem;
+    gap: 10px;
+}
+#titleProfile span{
+    font-size: 2.4rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+}
+.subtitleProfile{
+    font-size: 2.6rem;
+    font-weight: 200;
+    letter-spacing: 9px;
+}
+.profileLinks{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+.profileIconsBox{
+    display: flex;
+    gap: 40px;
+}
+.btnDownloadCv{
+    background-color: var(--primary-color);
+    padding: 20px 40px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    color: var(--text-white);
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-size: 1.7rem
+}
