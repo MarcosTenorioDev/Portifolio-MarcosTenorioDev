@@ -1,56 +1,136 @@
-#profile{
-    flex: 1;
-    display: flex;
-    max-width: 1980px;
-    width: 100%;
-    padding: var(--paddingSection);
+#profile {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1980px;
+  width: 100%;
+  padding: var(--paddingSection);
 }
-.profileIntro{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    
+.profileData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-height: 1000px;
+  gap: 50px;
+  flex: 2;
 }
-.profileData{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    max-height: 1000px;
-    gap: 50px;
+.profileIntro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
-#titleProfile{
-    display: flex;
-    flex-direction: column;
-    font-size: 6rem;
-    gap: 10px;
+#titleProfile {
+  display: flex;
+  flex-direction: column;
+  font-size: 6rem;
+  gap: 10px;
 }
-#titleProfile span{
-    font-size: 2.4rem;
-    font-weight: 200;
-    letter-spacing: 1px;
+#titleProfile span {
+  font-size: 2.4rem;
+  font-weight: 200;
+  letter-spacing: 1px;
 }
-.subtitleProfile{
-    font-size: 2.6rem;
-    font-weight: 200;
-    letter-spacing: 9px;
+.subtitleProfile {
+  font-size: 2.6rem;
+  font-weight: 200;
+  letter-spacing: 9px;
 }
-.profileLinks{
-    display: flex;
-    align-items: center;
-    gap: 50px;
+.profileLinks {
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
-.profileIconsBox{
-    display: flex;
-    gap: 40px;
+.profileIconsBox {
+  display: flex;
+  gap: 40px;
 }
-.btnDownloadCv{
-    background-color: var(--primary-color);
-    padding: 20px 40px;
-    border-radius: 8px;
-    border: none;
-    cursor: pointer;
-    color: var(--text-white);
-    font-weight: 700;
-    letter-spacing: 4px;
-    font-size: 1.7rem
+.btnDownloadCv {
+  background-color: var(--primary-color);
+  padding: 20px 40px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  color: var(--text-white);
+  font-weight: 700;
+  letter-spacing: 4px;
+  font-size: 1.7rem;
+}
+
+.profileImgContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 1000px;
+  flex: 2;
+}
+.profileImgBox {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.imgBox {
+  -webkit-clip-path: polygon(
+    25% 5%,
+    75% 5%,
+    100% 50%,
+    75% 95%,
+    25% 95%,
+    0% 50%
+  );
+  clip-path: polygon(25% 5%, 75% 5%, 100% 50%, 75% 95%, 25% 95%, 0% 50%);
+  transform: rotate(90deg);
+  height: 45rem;
+  width: 45rem;
+}
+.imgProfile {
+  width: 45rem;
+  transform: rotate(270deg);
+  object-fit: fill;
+  position: absolute;
+  top: -6rem;
+  left: -7rem;
+}
+.bigHexagon {
+  position: absolute;
+  right: 17rem;
+  top: 2rem;
+  z-index: -1;
+  width: 47rem;
+  height: 47rem;
+}
+.smallHexagon {
+  position: absolute;
+  top: 14rem;
+  right: 30rem;
+  z-index: -1;
+  width: 22rem;
+  height: 22rem;
+}
+
+.effect1::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 200px;
+  left: 350px;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  filter: blur(120px);
+}
+ .effect2::after {
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 160px;
+  right: 0;
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  filter: blur(80px);
 }
