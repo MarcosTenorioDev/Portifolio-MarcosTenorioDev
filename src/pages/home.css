@@ -3,13 +3,53 @@
     padding: 0;
     box-sizing: border-box;
 }
+#section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
 
 #header{
     height: 100vh;
+    max-height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+}
+#aboutMe{
+    height: 70vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1680px;
+    max-height: 1000px;
+    padding: var(--paddingSection);
+}
+.aboutMeImg{
+    width: 450px
+}
+.aboutMeContent{
+    max-width: 600px;
+    height: 450px;
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+    color: var(--text-white);
+}
+.aboutMeTitle{
+    font-size: 5.8rem;
+}
+.aboutMeSubtitle{
+    font-size: 18px;
+    text-shadow: 0px 2px 2px #0000001c;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    letter-spacing: 1px;
+    font-weight: 500;
 }
 .backgroundImg{
     background-image:linear-gradient(to bottom, #01012b00, #01012B 100%), url(../assets/background.webp);
