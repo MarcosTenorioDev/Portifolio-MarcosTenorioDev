@@ -29,15 +29,6 @@
     padding: var(--paddingSection); 
 }
 
-#projects{
-    width: 100%;
-    max-width: 1680px;
-    padding: var(--paddingSection);
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    gap: 100px;
-}
 .aboutMeImg{
     width: 450px
 }
@@ -45,13 +36,30 @@
     max-width: 600px;
     height: 450px;
     display: flex;
-    gap: 40px;
     flex-direction: column;
     color: var(--text-white);
+}
+#projects{
+    width: 100%;
+    max-width: 1680px;
+    padding: var(--paddingSection);
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+}
+#experience{
+    padding: var(--paddingSection);
+    width: 100%;
+    max-width: 1680px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-top: 100px;
 }
 .title{
     font-size: 5.8rem;
     font-weight: 600;
+    margin-bottom: 100px;
 }
 .cardsContainer{
     display: grid;

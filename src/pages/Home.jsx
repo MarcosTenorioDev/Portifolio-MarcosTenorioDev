@@ -1,4 +1,4 @@
-import { NavBar, Profile, CardProject } from "../components/components";
+import { NavBar, Profile, CardProject, Accordion } from "../components/components";
 import {
   react,
   HTML,
@@ -20,7 +20,7 @@ const Home = () => {
       description:
         " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
       deploy: "https://nutri-io.vercel.app/",
-      repo: "https://github.com/MarcosTenorioDev"
+      repo: "https://github.com/MarcosTenorioDev",
     },
     {
       name: "Projeto1",
@@ -29,7 +29,7 @@ const Home = () => {
       description:
         " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
       deploy: "https://nutri-io.vercel.app/",
-      repo: "https://github.com/MarcosTenorioDev"
+      repo: "https://github.com/MarcosTenorioDev",
     },
     {
       name: "Projeto1",
@@ -38,7 +38,7 @@ const Home = () => {
       description:
         " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
       deploy: "https://nutri-io.vercel.app/",
-      repo: "https://github.com/MarcosTenorioDev"
+      repo: "https://github.com/MarcosTenorioDev",
     },
     {
       name: "Projeto1",
@@ -47,7 +47,7 @@ const Home = () => {
       description:
         " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
       deploy: "https://nutri-io.vercel.app/",
-      repo: "https://github.com/MarcosTenorioDev"
+      repo: "https://github.com/MarcosTenorioDev",
     },
     {
       name: "Projeto1",
@@ -56,7 +56,7 @@ const Home = () => {
       description:
         " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
       deploy: "https://nutri-io.vercel.app/",
-      repo: "https://github.com/MarcosTenorioDev"
+      repo: "https://github.com/MarcosTenorioDev",
     },
     {
       name: "Projeto1",
@@ -65,7 +65,7 @@ const Home = () => {
       description:
         " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
       deploy: "https://nutri-io.vercel.app/",
-      repo: "https://github.com/MarcosTenorioDev"
+      repo: "https://github.com/MarcosTenorioDev",
     },
   ];
 
@@ -118,6 +118,13 @@ const Home = () => {
               />
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="section">
+        <div id="experience">
+          <h2 className="title">Experiência</h2>
+          <Accordion />
         </div>
       </section>
     </div>
