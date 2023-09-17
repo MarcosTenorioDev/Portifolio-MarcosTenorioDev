@@ -7,6 +7,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    padding: var(--paddingSection);
 }
 
 #header{
@@ -27,6 +28,14 @@
     max-height: 1000px;
     padding: var(--paddingSection);
 }
+
+#projects{
+    height: 100vh;
+    width: 100%;
+    max-width: 1680px;
+    max-height: 1000px;
+    padding: var(--paddingSection);
+}
 .aboutMeImg{
     width: 450px
 }
@@ -38,8 +47,17 @@
     flex-direction: column;
     color: var(--text-white);
 }
-.aboutMeTitle{
+.title{
     font-size: 5.8rem;
+    font-weight: 600;
+}
+.cardsContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+    justify-items: center;
+    grid-auto-flow: dense;
+    row-gap: 50px;
+    
 }
 .aboutMeSubtitle{
     font-size: 18px;

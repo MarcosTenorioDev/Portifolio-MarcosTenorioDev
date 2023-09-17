@@ -1,0 +1,80 @@
+#card {
+  height: 450px;
+  width: 330px;
+  box-shadow: 0 0 7px var(--text-white);
+  border-radius: 15px 0 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 0 15px 0;
+  background-color: var(--cardBg-color);
+}
+.imgCard {
+  width: 300px;
+}
+.projectTitleBox {
+  position: relative;
+  width: 50%;
+  text-align: center;
+  padding: 2px 0;
+  margin-bottom: 10px;
+}
+.projectTitleBox::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  z-index: 0;
+  bottom: -8px;
+  right: 0;
+  background: var(--secondary-color);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 214, 250, 1) 0%,
+    rgba(9, 32, 71, 1) 67%,
+    rgba(9, 32, 71, 1) 97%
+  );
+}
+.projectTitle {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.projectTechs {
+  padding: 12px 0px;
+  display: flex;
+  max-width: 90%;
+  gap: 20px;
+}
+.techImgCard {
+  width: 35px;
+}
+.projectDescriptionBox {
+  width: 90%;
+  flex: 1;
+  text-align: center;
+}
+.projectDescription {
+  font-size: 1.5rem;
+}
+.projectButtons {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  width: 90%;
+}
+.cardButton {
+  width: 110px;
+  height: 35px;
+  border-radius: 20px;
+  border: 1px solid var(--text-white);
+  cursor: pointer;
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 1);
+}
+#primaryBtn {
+  background-color: var(--primary-color);
+  color: var(--text-white);
+}
+#secondaryBtn {
+  background-color: var(--secondary-color);
+  color: var(--text-white);
+}
