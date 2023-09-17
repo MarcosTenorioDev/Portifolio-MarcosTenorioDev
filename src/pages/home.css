@@ -19,22 +19,24 @@
     overflow-x: hidden;
 }
 #aboutMe{
-    height: 70vh;
+    height: 80vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
     max-width: 1680px;
     max-height: 1000px;
-    padding: var(--paddingSection);
+    padding: var(--paddingSection); 
 }
 
 #projects{
-    height: 100vh;
     width: 100%;
     max-width: 1680px;
-    max-height: 1000px;
     padding: var(--paddingSection);
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    gap: 100px;
 }
 .aboutMeImg{
     width: 450px
@@ -56,7 +58,7 @@
     grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
     justify-items: center;
     grid-auto-flow: dense;
-    row-gap: 50px;
+    row-gap: 100px;
     
 }
 .aboutMeSubtitle{

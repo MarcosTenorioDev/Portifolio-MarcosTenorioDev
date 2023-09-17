@@ -40,6 +40,33 @@ const Home = () => {
       deploy: "https://nutri-io.vercel.app/",
       repo: "https://github.com/MarcosTenorioDev"
     },
+    {
+      name: "Projeto1",
+      img: teste,
+      techs: [react, HTML, CSS, prisma, nodejs],
+      description:
+        " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
+      deploy: "https://nutri-io.vercel.app/",
+      repo: "https://github.com/MarcosTenorioDev"
+    },
+    {
+      name: "Projeto1",
+      img: teste,
+      techs: [react, HTML, CSS, prisma, nodejs],
+      description:
+        " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
+      deploy: "https://nutri-io.vercel.app/",
+      repo: "https://github.com/MarcosTenorioDev"
+    },
+    {
+      name: "Projeto1",
+      img: teste,
+      techs: [react, HTML, CSS, prisma, nodejs],
+      description:
+        " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
+      deploy: "https://nutri-io.vercel.app/",
+      repo: "https://github.com/MarcosTenorioDev"
+    },
   ];
 
   return (
