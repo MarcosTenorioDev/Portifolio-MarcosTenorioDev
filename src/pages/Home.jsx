@@ -3,7 +3,8 @@ import {
   Profile,
   CardProject,
   Accordion,
-  FloatIcon
+  FloatIcon,
+  FormsContact,
 } from "../components/components";
 import {
   react,
@@ -132,6 +133,13 @@ const Home = () => {
         <div id="experience">
           <h2 className="title">Experiência</h2>
           <Accordion />
+        </div>
+      </section>
+
+      <section id="section">
+        <div id="contact">
+          <h2 className="title">Entre em contato</h2>
+          <FormsContact />
         </div>
       </section>
     </div>

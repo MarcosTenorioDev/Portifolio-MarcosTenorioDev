@@ -57,6 +57,16 @@
     margin-top: 100px;
     margin-bottom: 100px;
 }
+#contact{
+    padding: var(--paddingSection);
+    width: 100%;
+    max-width: 1680px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
 .title{
     font-size: 5.8rem;
     font-weight: 600;
