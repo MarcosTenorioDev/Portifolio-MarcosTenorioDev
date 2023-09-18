@@ -1,4 +1,4 @@
-import '../FloatIcon/FloatIcon.css'
+import './FloatIcon.css'
 import wpp from '../../assets/wpp.svg'
 
 const FloatIcon = () =>{
