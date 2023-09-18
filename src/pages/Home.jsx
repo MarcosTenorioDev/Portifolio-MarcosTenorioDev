@@ -1,4 +1,10 @@
-import { NavBar, Profile, CardProject, Accordion } from "../components/components";
+import {
+  NavBar,
+  Profile,
+  CardProject,
+  Accordion,
+  FloatIcon
+} from "../components/components";
 import {
   react,
   HTML,
@@ -71,6 +77,7 @@ const Home = () => {
 
   return (
     <div id="homepage">
+      <FloatIcon />
       <header id="header">
         <div className="backgroundImg"></div>
         <NavBar />
