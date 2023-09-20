@@ -55,6 +55,9 @@
   letter-spacing: 4px;
   font-size: 1.7rem;
 }
+.curriculo{
+  border: 2px solid red;
+}
 
 .profileImgContainer {
   display: flex;

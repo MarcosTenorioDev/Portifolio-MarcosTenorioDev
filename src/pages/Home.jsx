@@ -14,74 +14,85 @@ import {
   prisma,
   nodejs,
   javascript,
+  postgreesql,
+  tailwind,
+  typescript,
+  java,
 } from "../components/icons";
+
+import{
+  nutri,
+  contentAI,
+  ativamente,
+  ferreiraCosta,
+  decodificador,
+  javaDefault,
+} from '../components/pages'
 import phone from "../assets/icons/phone.svg";
 import location from "../assets/icons/location.svg";
 import mail from "../assets/icons/mail.svg";
 import user from "../assets/icons/user.svg";
-import linkedin from '../assets/icons/linkedin.svg'
-import github from '../assets/icons/github.svg'
-import wpp from '../assets/wpp.svg'
-
-import "./home.css";
+import linkedin from "../assets/icons/linkedin.svg";
+import github from "../assets/icons/github.svg";
+import wpp from "../assets/wpp.svg";
 import aboutMeImg from "../assets/aboutMe.webp";
-import teste from "../assets/image.png";
+import "./home.css";
 
 const Home = () => {
   const cards = [
     {
-      name: "Projeto1",
-      img: teste,
-      techs: [react, HTML, CSS, prisma, nodejs],
+      name: "Nutri.io",
+      img: nutri,
+      techs: [react, CSS, javascript, HTML],
       description:
-        " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
+        "Criação de dietas personalizadas com base em parâmetros pessoais utilizando inteligência artificial e um chatbot para tirar suas dúvidas em relação a alimentação",
       deploy: "https://nutri-io.vercel.app/",
-      repo: "https://github.com/MarcosTenorioDev",
+      repo: "https://github.com/MarcosTenorioDev/Nutri.io",
     },
     {
-      name: "Projeto1",
-      img: teste,
-      techs: [react, HTML, CSS, prisma, nodejs],
+      name: "Content.Ai",
+      img: contentAI,
+      techs: [react, tailwind, typescript, prisma, nodejs],
       description:
-        " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
-      deploy: "https://nutri-io.vercel.app/",
-      repo: "https://github.com/MarcosTenorioDev",
+        "Aplicação fullstack que transcreve vídeos em texto, com funcionalidades de criar resumos, títulos e descrições para YouTube, descrições para TikTok e Instagram.",
+      deploy: "https://content-io.vercel.app/",
+      repo: "https://github.com/MarcosTenorioDev/Content.AI",
     },
     {
-      name: "Projeto1",
-      img: teste,
-      techs: [react, HTML, CSS, prisma, nodejs],
+      name: "Clinica-Ativamente",
+      img: ativamente,
+      techs: [react, HTML, CSS, javascript],
       description:
-        " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
-      deploy: "https://nutri-io.vercel.app/",
-      repo: "https://github.com/MarcosTenorioDev",
+        "Freelance de uma landing page feita para uma clínica de psicologia com funcionalidade de agendamento de sessões de psicoterapia",
+      deploy: "https://clinica-ativamente.vercel.app/",
+      repo: "https://github.com/JocaCavalcanti/clinicaAtivamente",
     },
     {
-      name: "Projeto1",
-      img: teste,
-      techs: [react, HTML, CSS, prisma, nodejs],
+      name: "OMS-Ferreira-Costa",
+      img: ferreiraCosta,
+      techs: [react, nodejs, typescript, javascript, postgreesql],
       description:
-        " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
-      deploy: "https://nutri-io.vercel.app/",
-      repo: "https://github.com/MarcosTenorioDev",
+        "Sistema de Gerenciamento de Pedidos (OMS) da empresa Ferreira Costa. Este projeto fullstack foi desenvolvido durante a residência do porto digital",
+      deploy: "https://oms-ferreira-costa.vercel.app/Home",
+      repo: "https://github.com/MarcosTenorioDev/oms-ferreira-costa",
     },
     {
-      name: "Projeto1",
-      img: teste,
-      techs: [react, HTML, CSS, prisma, nodejs],
+      name: "Decodificador",
+      img: decodificador,
+      techs: [HTML, CSS, javascript],
       description:
-        " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
-      deploy: "https://nutri-io.vercel.app/",
-      repo: "https://github.com/MarcosTenorioDev",
+        "Decodificador com funcionalidades de codificar uma mensagem e decodificá-la utilizando javascript",
+      deploy: "https://marcostenoriodev.github.io/Programa-ONE/",
+      repo: "https://github.com/MarcosTenorioDev/Programa-ONE",
     },
     {
-      name: "Projeto1",
-      img: teste,
-      techs: [react, HTML, CSS, prisma, nodejs],
+      name: "Gestão de RH",
+      img: javaDefault,
+      techs: [java],
       description:
-        " Aqui é a descrição sobre o meu projeto e como ele funciona Aqui é a descrição sobre o meu projeto e como ele funciona",
-      deploy: "https://nutri-io.vercel.app/",
-      repo: "https://github.com/MarcosTenorioDev",
+        "Sistema simples desenvolvido em Java para auxiliar na gestão de funcionários de uma empresa. Ele permite carregar, cadastrar, classificar, pesquisar e listar funcionários com base no salário",
+      deploy: "https://github.com/MarcosTenorioDev/sistema_gestao_rh",
+      repo: "https://github.com/MarcosTenorioDev/sistema_gestao_rh",
     },
   ];
   const icons = [
@@ -103,9 +114,10 @@ const Home = () => {
     {
       name: "Redes Sociais",
       img: user,
-      descriptionimgLink:"https://github.com/MarcosTenorioDev",
-      descriptionimgLink1:"https://www.linkedin.com/in/marcostenoriodev/",
-      descriptionimgLink2:"https://api.whatsapp.com/send?phone=5581983062703&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio%2C%20podemos%20conversar%3F",
+      descriptionimgLink: "https://github.com/MarcosTenorioDev",
+      descriptionimgLink1: "https://www.linkedin.com/in/marcostenoriodev/",
+      descriptionimgLink2:
+        "https://api.whatsapp.com/send?phone=5581983062703&text=Ol%C3%A1%2C%20venho%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio%2C%20podemos%20conversar%3F",
       descriptionImg: github,
       descriptionImg1: linkedin,
       descriptionImg2: wpp,
@@ -177,7 +189,6 @@ const Home = () => {
           <h2 className="title">Entre em contato</h2>
           <div className="contactSectionContent">
             <div className="detailsContact">
-              
               <h3 className="contactTitle">
                 Gostaria de contratar meus serviços ?
               </h3>

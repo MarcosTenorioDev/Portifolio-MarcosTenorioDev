@@ -14,19 +14,19 @@ const Accordion = () => {
       company: "Inox tech",
       role: "Suporte de TI",
       timeInWork: "5 meses",
-      description: "asdaasdasdasdasdsd aasdasdasdasds aasdasdasdasdssas  as as  a aasdasdasdasds as aasdasdasdasdsaasdasdasdasds aasdasdasdasds",
+     description: "Atuei como Jovem Aprendiz na função de auxiliar de suporte de TI. Tive várias atribuições diferentes, desde o treinamento de usuários para o uso do sistema, como resolução de problemas de rede, configurações de computadores linux e windows, configuração de servidores utilizando Hyper-V, trabalhando na análise do tráfego de rede para achar possíveis problemas, etc.",
     },
     {
       company: "Porto Digital",
       role: "Residência Tecnológica",
       timeInWork: "4 meses",
-      description: "asdasd asd asd asd asd asd asd asdasdasd asd asd asd",
+      description: "Participei da solução de um problema da Ferreira-Costa, em parceria com a residência tecnológica do porto digital. Criamos uma aplicação fullstack e participei atuando principalmente na parte do Front-end, auxiliando os demais integrantes e participando da criação das funcionalidades desde a ideação/prototipação, ao desenvolvimento e análises de PR. Você pode ver o projeto nos cards acima.",
     },
     {
       company: "Porto Digital",
       role: "Residência Tecnológica",
       timeInWork: "atual",
-      description: "asdasd asd asd asd asd asd asd asdasdasd asd asd asd",
+      description: "Atualmente estou participando da residência tecnológica do porto digital em parceria com o Jornal do Comércio, estamos trabalhando na construção de uma api backend de notícias utilizando Lavravel(PHP) e Docker, apartir disso, uma integração com uma aplicação Front-End usando React.JS e mobile com React-Native.",
     },
   ];
 

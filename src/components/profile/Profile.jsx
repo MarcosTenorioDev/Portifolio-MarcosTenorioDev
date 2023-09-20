@@ -4,6 +4,7 @@ import linkedin from "../../assets/icons/linkedin.svg";
 import profileImg from "../../assets/profileImg.webp";
 import bigHexagon from "../../assets/bigHexagon.svg";
 import smallHexagon from "../../assets/smallHexagon.svg";
+import curriculo from "../../assets/curriculo.pdf";
 
 const Profile = () => {
   return (
@@ -16,18 +17,20 @@ const Profile = () => {
           </h1>
         </div>
         <div className="profileLinks">
-          <button className="btnDownloadCv">Baixar CV</button>
+          <a href={curriculo} target="blank">
+            <button className="btnDownloadCv">Baixar CV</button>
+          </a>
 
           <div className="profileIconsBox">
             <i>
-              <a href="https://github.com/MarcosTenorioDev" target="blank">
+              <a href="https://github.com/MarcosTenorioDev" target="_blank">
                 <img src={github} alt="Logo do github" />
               </a>
             </i>
             <i>
               <a
                 href="https://www.linkedin.com/in/marcostenoriodev/"
-                target="blank"
+                target="_blank"
               >
                 <img src={linkedin} alt="Logo do linkedin" />
               </a>
