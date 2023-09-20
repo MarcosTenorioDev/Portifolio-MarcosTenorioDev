@@ -1,111 +1,139 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-#section{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    padding: var(--paddingSection);
-}
-
-#header{
-    height: 100vh;
-    max-height: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
-}
-#aboutMe{
-    height: 80vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    max-width: 1680px;
-    max-height: 1000px;
-    padding: var(--paddingSection); 
+#section {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: var(--paddingSection);
 }
 
-.aboutMeImg{
-    width: 450px
+#header {
+  height: 100vh;
+  max-height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
 }
-.aboutMeContent{
-    max-width: 600px;
-    height: 450px;
-    display: flex;
-    flex-direction: column;
-    color: var(--text-white);
-}
-#projects{
-    width: 100%;
-    max-width: 1680px;
-    padding: var(--paddingSection);
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-}
-#experience{
-    padding: var(--paddingSection);
-    width: 100%;
-    max-width: 1680px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-#contact{
-    padding: var(--paddingSection);
-    width: 100%;
-    max-width: 1680px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 50px;
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-.title{
-    font-size: 5.8rem;
-    font-weight: 600;
-    margin-bottom: 100px;
-}
-.cardsContainer{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
-    justify-items: center;
-    grid-auto-flow: dense;
-    row-gap: 100px;
-    
-}
-.aboutMeSubtitle{
-    font-size: 18px;
-    text-shadow: 0px 2px 2px #0000001c;
-    font-size: 1.7rem;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
-.backgroundImg{
-    background-image:linear-gradient(to bottom, #01012b00, #01012B 100%), url(../assets/background.webp);
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    position: absolute;
-    z-index: -1;
+#aboutMe {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1680px;
+  max-height: 1000px;
+  padding: var(--paddingSection);
 }
 
-.backgroundImg::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
-    z-index: 1;
+.aboutMeImg {
+  width: 450px;
+}
+.aboutMeContent {
+  max-width: 600px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-white);
+}
+#projects {
+  width: 100%;
+  max-width: 1680px;
+  padding: var(--paddingSection);
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+}
+#experience {
+  padding: var(--paddingSection);
+  width: 100%;
+  max-width: 1680px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+#contact {
+  padding: var(--paddingSection);
+  width: 100%;
+  max-width: 1680px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  text-align: center;
+  gap: 50px;
+}
+.contactSectionContent {
+  display: flex;
+  justify-content: space-between;
+}
+.detailsContact {
+  letter-spacing: 1px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.contactTitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.contactSub {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.iconsBox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.title {
+  font-size: 5.4rem;
+  font-weight: 600;
+  margin-bottom: 100px;
+}
+.cardsContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  justify-items: center;
+  grid-auto-flow: dense;
+  row-gap: 100px;
+}
+.aboutMeSubtitle {
+  font-size: 18px;
+  text-shadow: 0px 2px 2px #0000001c;
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.backgroundImg {
+  background-image: linear-gradient(to bottom, #01012b00, #01012b 100%),
+    url(../assets/background.webp);
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  z-index: -1;
+}
+
+.backgroundImg::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  z-index: 1;
 }

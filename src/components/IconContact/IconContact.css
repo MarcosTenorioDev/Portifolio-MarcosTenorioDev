@@ -1,0 +1,24 @@
+.iconContact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.iconImg{
+    width: 50px;
+}
+.socialMediaImg{
+    width: 25px;
+    margin-top: 10px;
+}
+.socialMediaImgBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+}
+.descriptionIcon{
+    font-size: 1.6rem;
+}
+.nameIcon{
+    font-size: 1.2rem;
+}

@@ -42,11 +42,7 @@ const FormsContact = () => {
 
   return (
     <div className="contactContainer">
-      <div className="emailHeaderContainer">
-        <h2 className="emailHeaderSub">Sentiu falta de algo ?</h2>
-        <h2 className="emailHeaderSub">Há algo para nos recomendar ?</h2>
-        <h2 className="emailHeaderTitle">Entre em contato!</h2>
-      </div>
+      
       <form className="emailForm" onSubmit={handleSubmit}>
         <div className="smallInputContainer" id="emailSmallInputContainer">
           <div className="inputContact">
