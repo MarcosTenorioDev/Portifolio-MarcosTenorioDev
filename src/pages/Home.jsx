@@ -132,7 +132,7 @@ const Home = () => {
         <NavBar />
         <Profile />
       </header>
-       
+
       <section id="section">
         <div id="aboutMe">
           <img
@@ -214,7 +214,7 @@ const Home = () => {
             <FormsContact />
           </div>
         </div>
-      </section> 
+      </section>
     </div>
   );
 };

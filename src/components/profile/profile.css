@@ -213,7 +213,7 @@
   }
   .smallHexagon {
     top: 10rem;
-    right: 17rem;
+    right: 16.5rem;
     width: 17rem;
     height: 17rem;
   }
@@ -271,4 +271,111 @@
 
 
 
+}
+
+@media(max-width: 550px){
+
+  .imgBox {
+    height: 25rem;
+    width: 25rem;
+  }
+  .imgProfile {
+    left: -2rem;
+    top: -2.5rem;
+    width: 100%;
+  }
+
+  .bigHexagon {
+    right: 10rem;
+    top: 3rem;
+    width: 23rem;
+    height: 23rem;
+  }
+  .smallHexagon {
+    right: 15rem;
+    top: 8rem;
+    width: 13rem;
+    height: 13rem;
+  }
+  
+  .effect1::after {
+    left: -30px;
+    top: 12rem;
+    height: 100px;
+    width: 100px;
+    filter: blur(90px);
+  }
+  .effect2::after {
+    height: 100px;
+    width: 100px;
+    top: 7.5rem;
+  }
+
+}
+
+@media(max-width: 420px){
+  .imgBox {
+    height: 20rem;
+    width: 20rem;
+  }
+  .imgProfile {
+    left: -3rem;
+  }
+
+  .bigHexagon {
+    right: 7rem;
+    top: 2rem;
+    width: 18rem;
+    height: 18rem;
+  }
+  .smallHexagon {
+    right: 10.2rem;
+    top: 5.5rem;
+    width: 12rem;
+    height: 12rem;
+  }
+  
+  .effect1::after {
+    left: -15px;
+    top: 10rem;
+    height: 70px;
+    width: 70px;
+    filter: blur(60px);
+  }
+  .effect2::after {
+    height: 70px;
+    width: 70px;
+    top: 6rem;
+    filter: blur(50px);
+  }
+
+  .profileImgContainer {
+    margin-left: 20%;
+    padding-bottom: 0px;
+  }
+
+  .profileData {
+    gap: 10px;
+  }
+  .profileIntro {
+    gap: 0px;
+  }
+  #titleProfile {
+    font-size: 3rem;
+    gap: 0;
+  }
+  #titleProfile span {
+    font-size: 1.5rem;
+  }
+  .subtitleProfile {
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+  }
+  .btnDownloadCv {
+    padding: 15px 30px;
+    border-radius: 40px;
+    font-size: 1.3rem;
+  }
+
+  
 }
