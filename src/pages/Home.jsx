@@ -131,8 +131,8 @@ const Home = () => {
         <div className="backgroundImg"></div>
         <NavBar />
         <Profile />
-      </header>
-{/* 
+      </header> 
+
       <section id="section">
         <div id="aboutMe">
           <img
@@ -142,7 +142,7 @@ const Home = () => {
           />
 
           <div className="aboutMeContent">
-            <h2 className="title">Sobre mim</h2>
+            <h2 className="title" id="aboutMeTitle">Sobre mim</h2>
 
             <p className="aboutMeSubtitle">
               Atualmente estou no 3º Período do curso de Sistemas para internet
@@ -151,7 +151,7 @@ const Home = () => {
               <span>
                 Desenvolvo páginas web modernas e resolvo problemas de usuários
                 usando as principais tecnologias do mercado atual. Busco sempre
-                a Alta performance , Responsividade, Acessibilidde, SEO,
+                a Alta performance, Responsividade, Acessibilidde, SEO,
                 Manutenção e a Melhor solução para o seu produto.
               </span>
             </p>
@@ -159,7 +159,7 @@ const Home = () => {
         </div>
       </section>
 
-      <section id="section">
+       <section id="section">
         <div id="projects">
           <h2 className="title">Projetos</h2>
           <div className="cardsContainer">
@@ -214,7 +214,7 @@ const Home = () => {
             <FormsContact />
           </div>
         </div>
-      </section> */}
+      </section> 
     </div>
   );
 };
