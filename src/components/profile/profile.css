@@ -55,9 +55,6 @@
   letter-spacing: 4px;
   font-size: 1.7rem;
 }
-.curriculo{
-  border: 2px solid red;
-}
 
 .profileImgContainer {
   display: flex;
@@ -136,4 +133,142 @@
   border-radius: 50%;
   background-color: var(--primary-color);
   filter: blur(80px);
+}
+
+@media (max-width:1400px){
+  .effect1::after {
+    content: "";
+    z-index: -1;
+    position: absolute;
+    top: 200px;
+    left: 150px;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    filter: blur(120px);
+
+  }
+}
+@media (max-width: 1050px) {
+  .profileImgBox {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+  }
+  
+  .imgBox {
+    height: 40rem;
+    width: 40rem;
+  }
+  .imgProfile {
+    left: -10rem;
+  }
+
+  .bigHexagon {
+    right: 16rem;
+    width: 43rem;
+    height: 43rem;
+  }
+  .smallHexagon {
+    right: 29rem;
+    width: 17rem;
+    height: 17rem;
+  }
+  
+  .effect1::after {
+    left: 50px;
+    height: 170px;
+    width: 170px;
+  }
+  
+}
+
+@media (max-width:950px) {
+  #profile {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 50px;
+  }
+  .profileImgContainer {
+    margin-left: 20%;
+    padding-bottom: 50px;
+  }
+  
+  .imgBox {
+    height: 30rem;
+    width: 30rem;
+  }
+  .imgProfile {
+    left: -5rem;
+    top: -4rem;
+    width: 30rem;
+  }
+
+  .bigHexagon {
+    right: 8rem;
+    width: 33rem;
+    height: 33rem;
+  }
+  .smallHexagon {
+    top: 10rem;
+    right: 17rem;
+    width: 17rem;
+    height: 17rem;
+  }
+  
+  .effect1::after {
+    left: -20px;
+    top: 150px;
+    height: 150px;
+    width: 150px;
+  }
+  .effect2::after {
+    top: 100px;
+    right: 0;
+    height: 100px;
+    width: 100px;
+  }
+
+
+  .profileData {
+    gap: 20px;
+    text-align: center;
+  }
+  .profileIntro {
+    gap: 5px;
+  }
+  #titleProfile {
+    font-size: 4rem;
+    gap: 0;
+  }
+  #titleProfile span {
+    font-size: 2rem;
+  }
+  .subtitleProfile {
+    font-size: 1.6rem;
+    letter-spacing: 5px;
+    font-weight: 300;
+  }
+  .profileLinks {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .profileIconsBox {
+    display: flex;
+    gap: 40px;
+  }
+  .btnDownloadCv {
+    padding: 15px 35px;
+    border-radius: 40px;
+    font-size: 1.4rem;
+  }
+
+
+
+
+
+
+
 }
