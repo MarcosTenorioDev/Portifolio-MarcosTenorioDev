@@ -18,6 +18,7 @@
   max-width: 285px;
   padding: 0;
   letter-spacing: 1.5%;
+  min-width: 200px;
 }
 .logo span {
   display: flex;
@@ -78,5 +79,16 @@
   }
   .navContent{
     align-items: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .logo{
+    font-size: 1.8rem;
+    min-width: 160px;
+  }
+  .menu {
+    top: 21px;
+    right: 20px;
   }
 }
