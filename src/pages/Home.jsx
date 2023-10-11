@@ -20,14 +20,14 @@ import {
   java,
 } from "../components/icons";
 
-import{
+import {
   nutri,
   contentAI,
   ativamente,
   ferreiraCosta,
   decodificador,
   javaDefault,
-} from '../components/pages'
+} from "../components/pages";
 import phone from "../assets/icons/phone.svg";
 import location from "../assets/icons/location.svg";
 import mail from "../assets/icons/mail.svg";
@@ -37,6 +37,10 @@ import github from "../assets/icons/github.svg";
 import wpp from "../assets/wpp.svg";
 import aboutMeImg from "../assets/aboutMe.webp";
 import "./home.css";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/effect-cards";
+import { EffectCards } from "swiper/modules";
 
 const Home = () => {
   const cards = [
@@ -90,7 +94,7 @@ const Home = () => {
       img: javaDefault,
       techs: [java],
       description:
-        "Sistema simples desenvolvido em Java para auxiliar na gestão de funcionários de uma empresa. Ele permite carregar, cadastrar, classificar, pesquisar e listar funcionários com base no salário",
+        "Sistema para auxiliar na gestão de funcionários de uma empresa. Ele permite carregar, cadastrar, classificar, pesquisar e listar funcionários com base no salário",
       deploy: "https://github.com/MarcosTenorioDev/sistema_gestao_rh",
       repo: "https://github.com/MarcosTenorioDev/sistema_gestao_rh",
     },
@@ -131,7 +135,7 @@ const Home = () => {
         <div className="backgroundImg"></div>
         <NavBar />
         <Profile />
-      </header> 
+      </header>
 
       <section id="section">
         <div id="aboutMe">
@@ -142,7 +146,9 @@ const Home = () => {
           />
 
           <div className="aboutMeContent">
-            <h2 className="title" id="aboutMeTitle">Sobre mim</h2>
+            <h2 className="title" id="aboutMeTitle">
+              Sobre mim
+            </h2>
 
             <p className="aboutMeSubtitle">
               Atualmente estou no 3º Período do curso de Sistemas para internet
@@ -159,7 +165,7 @@ const Home = () => {
         </div>
       </section>
 
-       <section id="section">
+      <section id="section">
         <div id="projects">
           <h2 className="title">Projetos</h2>
           <div className="cardsContainer">
@@ -174,6 +180,29 @@ const Home = () => {
               />
             ))}
           </div>
+
+
+            <div className="responsiveCards">
+              <Swiper
+                effect={"cards"}
+                grabCursor={true}
+                modules={[EffectCards]}
+                className="mySwiper"
+              >
+                {cards.map((card) => (
+                  <SwiperSlide>
+                    <CardProject
+                      name={card.name}
+                      img={card.img}
+                      techs={card.techs}
+                      description={card.description}
+                      deploy={card.deploy}
+                      repo={card.repo}
+                    />
+                  </SwiperSlide>
+                ))}
+              </Swiper>
+            </div>
         </div>
       </section>
 
@@ -214,7 +243,7 @@ const Home = () => {
             <FormsContact />
           </div>
         </div>
-      </section> 
+      </section>
     </div>
   );
 };

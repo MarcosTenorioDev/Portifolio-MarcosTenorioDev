@@ -118,7 +118,7 @@
   flex-direction: column;
   gap: 30px;
   letter-spacing: 1px;
-  font-weight: 500;
+  font-weight: 300;
 }
 .backgroundImg {
   background-image: linear-gradient(to bottom, #01012b00, #01012b 100%),
@@ -141,6 +141,27 @@
   z-index: 1;
 }
 
+.swiper {
+  height: 475px;
+  width: 350px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+  padding: 10px;
+}
+
+.responsiveCards{
+  display: none;
+}
+
+
 @media (max-width: 950px) {
   #aboutMe {
     flex-direction: column;
@@ -159,6 +180,13 @@
   }
   #header{
     max-height: 900px;
+  }
+
+  .cardsContainer{
+    display: none;
+  }
+  .responsiveCards{
+    display: flex;
   }
 }
 
