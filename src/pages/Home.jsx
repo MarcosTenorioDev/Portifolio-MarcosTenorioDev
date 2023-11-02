@@ -49,7 +49,7 @@ const Home = () => {
       img: nutri,
       techs: [react, CSS, javascript, HTML],
       description:
-        "Criação de dietas personalizadas com base em parâmetros pessoais utilizando inteligência artificial e um chatbot para tirar suas dúvidas em relação a alimentação",
+        "Criação de dietas personalizadas com base em parâmetros pessoais 3inteligência artificial e um chatbot para tirar suas dúvidas em relação a alimentação",
       deploy: "https://nutri-io.vercel.app/",
       repo: "https://github.com/MarcosTenorioDev/Nutri.io",
     },
@@ -177,7 +177,7 @@ const Home = () => {
                 description={card.description}
                 deploy={card.deploy}
                 repo={card.repo}
-              />
+              /> 
             ))}
           </div>
 
@@ -219,7 +219,7 @@ const Home = () => {
           <div className="contactSectionContent">
             <div className="detailsContact">
               <h3 className="contactTitle">
-                Gostaria de contratar meus serviços ?
+                Fale comigo!
               </h3>
               <h4 className="contactSub">Será um prazer te ajudar</h4>
               <div className="iconsBox">
