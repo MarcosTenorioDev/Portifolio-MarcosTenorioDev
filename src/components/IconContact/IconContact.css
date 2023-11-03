@@ -22,3 +22,18 @@
 .nameIcon{
     font-size: 1.2rem;
 }
+
+@media (max-width: 550px){
+    .descriptionIcon{
+        font-size: 1.2rem;
+    }
+    .nameIcon{
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 420px){
+    .descriptionIcon{
+        font-size: 0.8rem;
+    }
+}

@@ -209,6 +209,11 @@
     min-width: 180px;
   }
 }
+@media (max-width: 550px) {
+.contactSectionContent{
+  gap: 50px;
+}
+}
 
 @media (max-width: 450px) {
   .title {
