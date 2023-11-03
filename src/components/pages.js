@@ -1,8 +1,8 @@
-import nutri from "../assets/projectsImg/nutri.png";
-import contentAI from "../assets/projectsImg/contentAI.png";
-import ativamente from "../assets/projectsImg/ativamente.png";
-import ferreiraCosta from "../assets/projectsImg/ferreiraCosta.png";
-import decodificador from "../assets/projectsImg/decodificador.png";
+import nutri from "../assets/projectsImg/nutri.jpg";
+import contentAI from "../assets/projectsImg/contentAI.jpg";
+import ativamente from "../assets/projectsImg/ativamente.jpg";
+import ferreiraCosta from "../assets/projectsImg/ferreiraCosta.jpg";
+import decodificador from "../assets/projectsImg/decodificador.jpg";
 import javaDefault from "../assets/projectsImg/java.jpg";
 
 export{
