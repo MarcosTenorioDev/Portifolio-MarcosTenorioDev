@@ -3,6 +3,10 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+#homepage{
+  overflow: hidden;
+}
 #section {
   display: flex;
   justify-content: center;
@@ -144,7 +148,7 @@
 .swiper {
   height: 475px;
   width: 350px;
-}
+}  
 
 .swiper-slide {
   display: flex;
@@ -193,7 +197,7 @@
   }
   .responsiveCards{
     display: flex;
-  }
+  }  
 }
 
 @media (max-width: 650px) {
@@ -213,6 +217,12 @@
 .contactSectionContent{
   gap: 50px;
 }
+}
+@media (max-width:500px) {
+  .swiper {
+    height: 375px;
+    width: 250px;
+  }
 }
 
 @media (max-width: 450px) {
