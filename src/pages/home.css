@@ -203,6 +203,7 @@
 @media (max-width: 650px) {
   .title {
     font-size: 4rem;
+    margin-bottom: 50px;
   }
 
   .aboutMeSubtitle {
@@ -211,6 +212,17 @@
   }
   .aboutMeImg{
     min-width: 180px;
+  }
+  #experience {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  #contact {
+    margin-top: 50px;
+    gap: 20px;
+  }
+  #projects {
+    padding-top: 0px;
   }
 }
 @media (max-width: 550px) {
